@@ -1,0 +1,205 @@
+[ec2-user@ip-172-31-12-212 code]$ history
+    1  wget https://releases.hashicorp.com/terraform/1.0.3/terraform_1.0.3_linux_amd64.zip
+    2  ls -ltr
+    3  unzip terraform_1.0.3_linux_amd64.zip
+    4  ls -ltr
+    5  sudo mv /usr/local/bin/
+    6  sudo mv terraform /usr/local/bin/
+    7  terraform --version
+    8  terraform -V
+    9  terraform -version
+   10  mkdir code
+   11  cd code/
+   12  mkdir example1
+   13  cd example1/
+   14  aws configure
+   15  vi provider.tf
+   16  ls -ltr
+   17  vi ec2_create.tf
+   18  ls -ltr
+   19  ls -la
+   20  terraform init
+   21  vi ec2_create.tf
+   22  terraform init
+   23  ls -la
+   24  ls -ltr .terraform
+   25  ls -ltr .terraform/providers/
+   26  ls -ltr
+   27  terraform plan
+   28  terraform apply
+   29  ls -ltr
+   30  terraform plan
+   31  vi ec2_create.tf 
+   32  terraform plan
+   33  terraform apply -refresh-only
+   34  terraform plan
+   35  ls -ltr
+   36  vi terraform.tfstate
+   37  terraform apply
+   38  rm -rf terraform.tfstate terraform.tfstate.backup
+   39  ls -ltr
+   40  terraform apply
+   41  vi cre
+   42  vi ec2_create.tf 
+   43  terraform apply
+   44  vi ec2_create.tf 
+   45  terraform apply
+   46  vi ec2_create.tf 
+   47  terraform apply
+   48  vi ec2_create.tf 
+   49  cat provider.tf 
+   50  ls -ltr
+   51  sudo yum install git -y
+   52  git init
+   53  git add .
+   54  git commit -m "first commit"
+   55  git config --global --edit
+   56  git commit --amend --reset-author
+   57  git branch -M main
+   58  git remote add origin https://github.com/devopsmar2021/example1_terraform.git
+   59  git push -u origin main
+   60  ls -ltr
+   61  ls -la
+   62  vi .gitignore
+   63  git add .
+   64  git commit -m "updated"
+   65  git push
+   66  git push --set-upstream origin main
+   67  git rm .terraform
+   68  git rm -r .terraform
+   69  git add .
+   70  git commit -m "updated"
+   71  git push --set-upstream origin main
+   72  rm -rf .git
+   73  ls -la
+   74  git init
+   75  git add .
+   76  git commit -m "first commit"
+   77  git branch -M main
+   78  git remote add origin https://github.com/devopsmar2021/example1_terraform.git
+   79  git push -u origin main
+   80  ls -ltr
+   81  vi terraform.tfstate
+   82  vi backend.tf
+   83  !
+   84  vi backend.tf
+   85  terraform init
+   86  ls -ltr
+   87  cat terraform.tfstate
+   88  cat backend.tf 
+   89  terraform apply
+   90  terraform destroy
+   91  ls -ltr
+   92  cd ../
+   93  mkdir example2
+   94  cd example1/
+   95  cd ../example2/
+   96  cp ../example1/provider.tf .
+   97  cp ../example1/backend.tf .
+   98  vi backend.tf 
+   99  ls -ltr
+  100  vi vpc.tf
+  101  terraform init
+  102  terraform plan
+  103  terraform apply
+  104  terraform destroy
+  105  cd ../
+  106  mkdir example3
+  107  cd example3/
+  108  cp ../example2/provider.tf .
+  109  cp ../example2/backend.tf .
+  110  vi backend.tf 
+  111  ls- ltr
+  112  ls -ltr
+  113  vi vpc.tf
+  114  terraform init
+  115  ls -ltr .terraform/modules/vpc/main.tf 
+  116  ls -ltr
+  117  cat vpc.tf 
+  118  terraform plan
+  119  terraform apply
+  120  vi vpc.tf 
+  121  terraform apply
+  122  ls -ltr
+  123  cat vpc.tf 
+  124  ls -ltr .terraform/modules/vpc/
+  125  cat vpc.tf 
+  126  terraform destory
+  127  terraform destroy
+  128  ls -ltr
+  129  cd ../
+  130  mkdie example3
+  131  mkdie example4
+  132  mkdir example4
+  133  ls -ltr
+  134  cd  example24
+  135  cd  example4
+  136  ls -ltr
+  137  vi ../example1/ec2_create.tf .
+  138  cp ../example1/ec2_create.tf .
+  139  ls -ltr
+  140  vi ec2_create.tf 
+  141  vi var.tf
+  142  ls -ltr
+  143  cat ec2_create.tf 
+  144  vi var.tf
+  145  vat var.tf 
+  146  cat var.tf 
+  147  vi ec2_create.tf 
+  148  ls -ltr
+  149  vi var.tf 
+  150  terraform init
+  151  terraform apply
+  152  terraform destory
+  153  terraform destroy
+  154  ls -ltr
+  155  cd ../
+  156  mkdir example5
+  157  cd example5/
+  158  ls -ltr
+  159  mkdir modules
+  160  mkdir modules/ec2
+  161  cp ../example4/ec2_create.tf modules/ec2/
+  162  cp ../example4/var.tf modules/ec2/
+  163  ls -ltr
+  164  tree
+  165  sudo yum install tree
+  166  ls -ltr
+  167  tree
+  168  ls- ltr
+  169  ls -ltr
+  170  vi create_instance.tf
+  171  tree
+  172  vi create_instance.tf
+  173  vi modules/ec2/ec2_create.tf 
+  174  vi modules/ec2/var.tf 
+  175  ls -ltr
+  176  cp ../example2/provider.tf .
+  177  cp ../example2/backend.tf .
+  178  ls -ltr
+  179  vi backend.tf 
+  180  tree
+  181  cat }
+  182  cat create_instance.tf 
+  183  terraform init
+  184  terraform plan
+  185  terraform apply
+  186  ls -ltr
+  187  terraform destory
+  188  terraform destroy
+  189  ls -la
+  190  cat .terraform.lock.hcl
+  191  cd ../
+  192  rm -rf example1/.git
+  193  ls -ltr
+  194  cp example1/.gitignore .
+  195  ls -ltr
+  196  ls -la
+  197  git init
+  198  git add .
+  199  git commit -m "first commit"
+  200  git branch -M main
+  201  git remote add origin https://github.com/devopsmar2021/terraform_1.git
+  202  git push -u origin main
+  203  history
+
